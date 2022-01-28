@@ -15,7 +15,7 @@ class Solution:
                 
             else:
                 temp=prev2
-                prev2=(curr+prev2)
+                prev2=max(curr+prev2,prev1)
                 prev1=temp
         
         return prev2
