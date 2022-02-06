@@ -27,9 +27,11 @@ class Solution(object):
         
         for start,end in intervals[1:]:
             lastend=output[-1][1]
-            
+            # print(lastend)
             if start <=lastend:
+                #end value of the most recently added interval
                 output[-1][1]=max(lastend,end)
+                # print(output[-1][1])
             else:
                 output.append([start,end])
         return output
