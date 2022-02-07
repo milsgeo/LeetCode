@@ -9,7 +9,7 @@ class Solution {
             }
         }
         int [][]result=new int[k][2];
-        while(k-->0){
+        while(k-->0){ //while there are still elements in the heap
             result[k]=maxHeap.remove();
         }
         return result;
