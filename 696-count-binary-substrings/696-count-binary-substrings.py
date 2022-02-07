@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         groups=[1]
-        for i in xrange(1,len(s)):
+        for i in range(1,len(s)):
             if(s[i-1]!=s[i]):
                 groups.append(1)
             else:
@@ -13,6 +13,6 @@ class Solution(object):
             
         count=0
         
-        for i in xrange(1,len(groups)):
+        for i in range(1,len(groups)):
             count+=min(groups[i-1],groups[i])
         return count
