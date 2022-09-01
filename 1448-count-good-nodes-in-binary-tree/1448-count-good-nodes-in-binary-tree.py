@@ -17,5 +17,5 @@ class Solution:
                 dfs(node.right, max(node.val, max_path))
             if node.left:
                 dfs(node.left, max(node.val, max_path))
-        dfs(root, float("-inf"))
+        dfs(root, float("-inf")) #root is always good
         return self.output
