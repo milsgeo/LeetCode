@@ -10,5 +10,5 @@ class Solution:
                 h=m #could be the first bad version itself
             else:
                 l=m+1
-        return l
+        return l #can even be h
             
