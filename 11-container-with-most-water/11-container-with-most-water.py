@@ -6,7 +6,7 @@ class Solution:
         while l<h:
             width=h-l
             vol=max(vol,min(height[l],height[h])*width)
-            if (height[l]<=height[h]):
+            if (height[l]<height[h]):
                 l+=1
             else:
                 h-=1
