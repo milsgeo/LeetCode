@@ -6,7 +6,7 @@ class Solution:
         output=[intervals[0]]
         
         for l,r in intervals[1:]:
-            if l > output[-1][1]:
+            if l > output[-1][1]: #previous one's end
                 output.append([l,r])
             elif r > output[-1][1]:
                 output[-1][1]=r
