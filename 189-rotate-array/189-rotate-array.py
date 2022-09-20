@@ -3,7 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        x=k%len(nums)
+        x=k%len(nums) #in case k is greater than len(nums)
         
         def rev(s,e):
             while s<e:
@@ -11,7 +11,7 @@ class Solution:
                 s+=1
                 e-=1
                 
-        nums.reverse()
+        nums.reverse() #first reversing the nums list
         rev(0,x-1)
         rev(x,len(nums)-1)
         
