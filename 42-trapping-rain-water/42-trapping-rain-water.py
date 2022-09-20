@@ -11,13 +11,13 @@ class Solution:
             if(height[l]<height[h]):
                 if height[l]>=left_max:
                     left_max = height[l] 
-                else:
-                    ans+= left_max-height[l]
+                
+                ans+= left_max-height[l]
                 l+=1
             else:
                 if height[h]>=right_max:
                     right_max = height[h] 
-                else:
-                    ans+= right_max-height[h]
+                
+                ans+= right_max-height[h]
                 h-=1
         return ans
