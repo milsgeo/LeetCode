@@ -3,7 +3,7 @@ class Solution:
         n=len(height)
         l,h=0,n-1
         vol=0
-        while l<h:
+        while l<=h:
             width=h-l
             vol=max(vol,min(height[l],height[h])*width)
             if (height[l]<height[h]):
