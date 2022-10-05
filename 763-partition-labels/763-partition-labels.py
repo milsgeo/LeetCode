@@ -3,7 +3,7 @@ class Solution:
         last={c:i for i,c in enumerate(s)}
         # print(last)
         output=[]
-        max_index=-1
+        max_index=0
         size=1  #size of array being built up so far
         for i,c in enumerate(s):
             max_index=max(max_index, last[c])
