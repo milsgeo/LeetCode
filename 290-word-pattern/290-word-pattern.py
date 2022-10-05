@@ -5,7 +5,7 @@ class Solution:
         if len(pattern)!=len(words):
             return False
         
-        for i in range(len(words)):
+        for i in range(len(pattern)):
             ch=pattern[i]
             w=words[i]
             
